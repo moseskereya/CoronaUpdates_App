@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+html{
+    font-family:var(--body-font);
+    font-size:14px;
+    color: var(--body-font-color);
+    scroll-behavior: smooth;
+}
+
+.App {
+    text-align: center;
+  }
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #bebcbc;
+  padding: 15px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.title{
+    font-family: var(--main-font);
+    color: var(--main-font-color-dark);
+    letter-spacing: .1rem;
+    font-size: 20px;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  color: #eedddd;
+}
+li{
+    margin-right: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-font-color-dark);
+    cursor: pointer; 
+}
+
+.link{
+    margin-right: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eedddd;
+}
+.hero{
+    height: 40vh;
+    position: relative;
+    width: 100%;
+    background-image: url("https://www.proactiveinvestors.com/upload/News/Image/2020_02/1582208240_shutterstock_1621031059_coronavirus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero::before{
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    height: inherit;
+    width: inherit;
+    background-color: rgba(126, 123, 123, 0.205);
+}
+.hero-clipped{
+    height: inherit;
+    background-color: #bebcbc;
+    top: 0;
+    width: 45%;
+    transform-origin: right;
+    right: 0;
+    z-index: 10;
+    position: absolute;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.hero-textbox{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: center;
+    transform: translate(-50% -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: rgb(39, 39, 37);
+    padding: 1rem;
+    z-index: 20;
+}
+
+.span{
+  line-height: 2;
+}
+h4, 
+h5{
+    padding: 4px;
+    font-size: medium;
+    font-family: 'Cabin';
+    line-height: 2;
+    color: rgb(39, 39, 37);
+}
+.container{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;  
+    padding: 20px 0;
+}
+
+.data{
+ width: 50%;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ background-color: #555050;
+ padding:20px 0;
+}
+.detail{
+width: 50%;
+background-color: #f1f1f1;
+padding:20px 0;
+}
+.detail h4{
+    font-weight: normal;
+    font-size: 20px;
+    color: #c25555;
+    margin: 3rem;
+}
+.detail p{
+    padding: 10px;
+}
+.head p{
+    margin: 5px 0;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #252525;
+    color: #fff;
+    margin: 4px 0;
+}
+.data h3{
+    color: rgb(160, 154, 154);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    padding: 8px;
+    margin: 5px 0;
+}
+.data p{
+    color: #c25555;
+    font-size: 20px;
+    padding: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.head{
+    padding: 30px;
+    margin: 5rem auto;
+}
+.head h2{
+    color: rgb(207, 204, 204);
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.footer{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #555050;
+    color: #bebcbc;
+    border-top: 1px solid #bebcbc;
+    position: fixed;
+    width: 100%;
+    overflow-x: hidden;
+    bottom: 0;
+}
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th{
+      padding: 8px;
+      font-family: var(--main-font);
+      text-transform: uppercase;
+      text-align: left;
+  }
+  td{
+    border: 1px solid #838181;
+    text-align:left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #a8a8a8;
+  }
+
+.links{
+    text-decoration: none;
+    color: inherit;
+}
+.links:hover{
+    text-decoration: underline;
+}
+.h1{
+    padding: 15px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+.red{
+    background-color:rgb(61, 59, 59);
+    color: #bdaaaa;
+    text-align: center;
+}
+
+.developers{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-attachment: fixed;
+    margin: 20px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+    .developers::after{
+        content: '';
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        background-image: linear-gradient(45deg, rgba(167, 25, 25, 0.418), rgb(13, 13, 110));
+    }
+    .dev-content{
+        z-index: 1000;
+        padding: 25px;
+        background-color: rgba(243, 245, 240, 0.397);
+        max-width: 80%;
+        margin: 0 auto;
+        color: #000000;
+    }
+    .dev-content h3{
+        padding: 6px;
+        color: var(--body-font-color);
+        font-size: 34px;
+        color: #ececec;
+        letter-spacing: 6px;
+        font-family: var(--secondary-font);
+    }
+    .btn-span{
+        margin:10px 0 ;
+    }
+    
+    .skills{
+    margin: 20px auto;
+    background-color: #c5c5c4;
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+    
+    .item3{
+        background-color: #3d3d3c;
+        padding: 15px 8px;
+        display: flex;
+        margin: 6px auto;
+        color: rgb(219, 218, 218);
+        font-family: var(--main-font);
+    }
+    
+    .dev-content1 {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+    .img1{
+        position: relative;
+        width: 100%;
+    }
+    .dev-content2 h3{
+        font-family: var(--main-font);
+        text-transform: uppercase;
+        margin: 15px 0;
+        padding: 10px 0;
+        letter-spacing: 5px;
+    }
+    .dev-content2 p{
+        letter-spacing: 1px;
+        /* padding: 4px; */
+    }
+    
+    .dev-content2{
+        max-width: 500px;
+        width: 100%;
+        background-color:#ddd;
+        height: auto;
+        padding: 20px;
+        margin: 10px;
+    }
+    .time{
+        padding: 10px 0;
+        margin: 10px;
+        color: rgba(0,0,0,.5);
+    }
+    .top {
+        padding: 15px 0;
+        margin:10px auto;
+    }
+    .top h3{
+        outline-color: initial;
+        font-family: var(--secondary-font);
+        letter-spacing: 3px;
+        font-size: 30px;
+        color: var(--secondary-font-color);
+    }
+    .line2{
+        width: 112px;
+        height: 47px;
+        border-bottom: 2px solid crimson;
+        position: relative;
+        margin:3px auto;
+    }
+
+    .search{
+        padding: 20px 0;
+        height: 20vh;
+        margin:10px 0;
+        background: #ffffff;
+    }
+    @media screen and (max-width:768px){
+        .hero{
+            height:20vh;
+        }
+        .main-heading{
+            font-size: 1.5rem;
+        }
+        .sub-heading{
+            font-size: 1.1rem;
+            padding: 2px;
+        }
+        .cta-btn{
+            display: none;
+        }
+        .dev-content h3{
+            font-size: 16px;
+        }
+        .container{
+            padding: 10px 0;
+        }
+        tr{
+            padding: 8px;
+        }
+        th{
+            padding: 8px;
+        }
+        .red{
+            padding: 8px;
+        }
+
+      
+    }
+    
+    @media screen and (max-width:500px){
+        .main-heading{
+            font-size: 1.1rem;
+        }
+          .sub-heading{
+            font-size: 1rem;
+        }
+        .title{
+            display: none;
+        }
+    
+        .cta-btn{
+            padding: 1rem 2rem;
+            margin: 2rem 0;
+        }
+    
+    }
+    
+    
+    
+
+@media screen and (max-width:1024px){
+    .data{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .container{
+        flex-direction: column;
+    }
+    .detail, .data{
+        width: 100%;
+    }
+    .data h3{
+        font-size: 14px;
+    }
+    .hero{
+        height: 40vh;
+    }
+}
