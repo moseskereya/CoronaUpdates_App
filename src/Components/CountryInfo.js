@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from  'axios'
+import {Link} from 'react-router-dom'
 import Show from './Skills'
 class CountryInfo extends Component {
     constructor(props) {
@@ -54,6 +55,18 @@ class CountryInfo extends Component {
                         <td>{dataList.critical}</td>
                     </tr>
             </table>
+            </div>
+            <div className="button-container">
+               <button className="btn">
+                   <Link className="links" to ="/Countries">
+                        Go back to list
+                   </Link>
+                   </button>
+               <button className="btn">
+                   <Link className="links" to ="/Maps">
+                        View By Maps
+                   </Link>
+                   </button>
             </div>
             </React.Fragment>
          );

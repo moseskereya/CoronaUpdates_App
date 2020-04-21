@@ -238,6 +238,12 @@ padding:20px 0;
     color: #bdaaaa;
     text-align: center;
 }
+.button-container{
+    display: flex;
+    padding: 20px 0;
+    margin: 4rem 0;
+    justify-content: space-around;
+}
 
 .developers{
     padding-top: 50px;
